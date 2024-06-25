@@ -1,7 +1,5 @@
 # Bank Management API 🏦💻
 
-## Descrição ℹ️
-
 Sistema de gestão bancária implementado em PHP, que expõe uma API composta por dois endpoints: `/conta` e `/transacao`. A API permite a criação de contas bancárias e a realização de transações financeiras, aplicando taxas diferenciadas conforme a forma de pagamento escolhida.
 
 ## Endpoints 🚀
