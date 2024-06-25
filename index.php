@@ -1,13 +1,15 @@
 <?php
 
+header("Content-Type: application/json");
+
 $request_uri = $_SERVER['REQUEST_URI'];
 $method = $_SERVER['REQUEST_METHOD'];
 
-switch ($request_uri) {
-    case '/conta':
+switch (true) {
+    case preg_match('/\/conta/', $request_uri):
         include 'endpoints/conta.php';
         break;
-    case '/transacao':
+    case preg_match('/\/transacao/', $request_uri):
         include 'endpoints/transacao.php';
         break;
     default:
